@@ -14,9 +14,122 @@
       href="https://devchallenges.io/"
     />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Devchallenges</title>
   </head>
   <body>
-    
+    <div class="wrap">
+      <h1 class="header">Checkout</h1>
+      <!--Shoppping section-->
+      <section class="shopping-section">
+        <!--Product 1 -->
+        <div class="product1">
+          <img src="resources/photo1.png" alt="" class="product-image">
+          <div class="product-infos">
+            <p class="product-name">Vintage Blackbag</p>
+            <div class="product-price">
+              <p class="new-price">$54.99</p>
+              <p class="old-price">$94.99</p>
+            </div>
+            <div class="quantity-selector">
+              <div class="sign">−</div>
+              <p class="quantity">1</p>
+              <div class="sign">+</div>
+            </div>
+          </div>
+        </div>
+        <!--Product 2-->
+        <div class="product2">
+          <img src="resources/photo2.png" alt="" class="product-image">
+          <div class="product-infos">
+            <p class="product-name">Levi Shoes</p>
+            <div class="product-price">
+              <p class="new-price">$74.99</p>
+              <p class="old-price">$124.99</p>
+            </div>
+            <div class="quantity-selector">
+              <div class="sign">−</div>
+              <p class="quantity">1</p>
+              <div class="sign">+</div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="shipping-infos">
+          <p class="shipping-title">Shipping</p>
+          <p class="shipping-price">$19</p>
+        </div>
+        <hr>
+        <div class="total">
+          <p class="total-title">Total</p>
+          <p class="total-price">$148.98</p>
+        </div>
+      </section>
+      <!--Seller informations -->
+
+      <form action="#">
+        <h2 class="contact-header">Contact information</h2>
+
+        <p class="contact-info">E-mail</p>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="Enter your email..." name="email">
+        </div>
+
+        <p class="contact-info">Phone</p>
+        <div class="input-container">
+          <i class="fa fa-phone icon"></i>
+          <input class="input-field" type="text" placeholder="Enter your phone..." name="phone">
+        </div> 
+          <h2 class="contact-header">Shipping address</h2>
+
+        <p class="contact-info">Full name</p>
+        <div class="input-container">
+          <i class="fa fa-user-circle-o icon"></i>
+          <input class="input-field" type="text" placeholder="Your full name..." name="full-name">
+        </div>
+
+        <p class="contact-info">Adress</p>
+        <div class="input-container">
+          <i class="fa fa-home icon"></i>
+          <input class="input-field" type="text" placeholder="Your adress..." name="adress">
+        </div>
+
+        <p class="contact-info">City</p>
+        <div class="input-container">
+          <i class="fa fa-database icon"></i>
+          <input class="input-field" type="text" placeholder="Your city..." name="city">
+        </div>
+
+        <div class="flex-inputs">
+          <div>
+            <p class="contact-info">Country</p>
+            <div class="input-container">
+              <i class="fa fa-database icon"></i>
+              <input class="input-field" type="text" placeholder="Your country..." name="country">
+            </div>
+          </div>
+            
+          <div>
+            <p class="contact-info">Postal code</p>
+            <div class="input-container">
+              <i class="fa fa-envelope-o icon"></i>
+              <input class="input-field" type="text" placeholder="Your country..." name="country">
+            </div>
+          </div>
+        </div>
+        
+        <input type="checkbox" name="" id="checkbox">
+        <label for="checkbox">Save this information for next time</label>
+
+        <input type="submit" value="Continue">
+      </form>
+    </div>
+   
+    <footer>
+      <p>created by <a href="https://devchallenges.io/portfolio/il-mostroo" class="username">Mohammed Salmi</a> - devChallenges.io</p>
+    </footer>
   </body>
 </html>
