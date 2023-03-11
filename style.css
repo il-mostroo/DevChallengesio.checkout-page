@@ -173,9 +173,6 @@ footer p a {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
-  .input-field{
-    min-width: 29.0625rem;
-  }
   .shopping-section{
     margin-top: 1.3rem;
   }
