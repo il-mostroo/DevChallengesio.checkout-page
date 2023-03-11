@@ -126,6 +126,8 @@
     color: hsla(0, 0%, 51%, 1) ;
     padding: 0.5625rem 0.8125rem;
     margin-bottom: clamp(1.032rem, 0.956rem + 0.328vw, 1.251rem);
+    display: flex;
+    align-items: center;
 }
 .input-field{
     border: none;
