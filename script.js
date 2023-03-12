@@ -44,6 +44,7 @@ subItem1.addEventListener('click',()=>{
         if(confirm("Do you wanna remove the item from the basket?")){
             itemsNum1.textContent=(Number(itemsNum1.textContent)-1).toString()  
             product1.style.opacity='50%'
+            newPrice1.textContent="$0"
         }
     }
     else if(!(itemsNum1.textContent=="0")){
@@ -60,6 +61,7 @@ subItem2.addEventListener('click',()=>{
         if(confirm("Do you wanna remove the item from the basket?")){
             itemsNum2.textContent=(Number(itemsNum2.textContent)-1).toString()  
             product2.style.opacity='50%'
+            newPrice1.textContent="$0"
         }
     }
     else if(!(itemsNum2.textContent=="0")){
