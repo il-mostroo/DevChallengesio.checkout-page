@@ -13,11 +13,13 @@
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Devchallenges</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -35,9 +37,9 @@
                 <p class="old-price">$94.99</p>
               </div>
               <div class="quantity-selector">
-                <div class="sign">−</div>
-                <p class="quantity">1</p>
-                <div class="sign">+</div>
+                <div class="sign minus-sign1">−</div>
+                <p class="quantity1">1</p>
+                <div class="sign plus-sign1">+</div>
               </div>
             </div>
           </div>
@@ -51,9 +53,9 @@
                 <p class="old-price">$124.99</p>
               </div>
               <div class="quantity-selector">
-                <div class="sign">−</div>
-                <p class="quantity">1</p>
-                <div class="sign">+</div>
+                <div class="sign minus-sign2">−</div>
+                <p class="quantity2">1</p>
+                <div class="sign plus-sign2">+</div>
               </div>
             </div>
           </div>
@@ -109,7 +111,14 @@
               <p class="contact-info">Country</p>
               <div class="input-container">
                 <i class="fa fa-database icon"></i>
-                <input class="input-field" type="text" placeholder="Your country..." name="country">
+                <input list="countries" type="text" class="input-field"  placeholder="Your country..." name="country">
+                <datalist id="countries">
+                  <option value="Morocco"> 
+                  <option value="Algeria">
+                  <option value="Tunisia">
+                  <option value="Libia">
+                  <option value="Mauritanie"> 
+                </datalist>
               </div>
             </div>
             
@@ -117,7 +126,7 @@
               <p class="contact-info">Postal code</p>
               <div class="input-container">
                 <i class="fa fa-envelope-o icon"></i>
-                <input class="input-field" type="text" placeholder="Your country..." name="country">
+                <input class="input-field" type="text" placeholder="Your postal code..." name="postal-code">
               </div>
             </div>
           </div>
