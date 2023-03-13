@@ -17,13 +17,15 @@ const newPrice2=document.querySelector('.new-price2')
 
 const signs=document.querySelectorAll('.sign')
 const shipping=document.querySelector('.shipping-price')
+
+const totalPrice=document.querySelector('.total-price')
 addItem1.addEventListener('click',()=>{
     let price=Number((newPrice1.textContent).slice(1))
     price+=54.99
     product1.style.opacity='100%'
     itemsNum1.textContent=(Number(itemsNum1.textContent)+1).toString()
     if(Number(itemsNum1.textContent)>0){
-        newPrice1.textContent="$"+(Math.round(price))
+        newPrice1.textContent="$"+price
     }
 })
 
@@ -33,7 +35,7 @@ addItem2.addEventListener('click',()=>{
     product2.style.opacity='100%'
     itemsNum2.textContent=(Number(itemsNum2.textContent)+1).toString()
     if(Number(itemsNum2.textContent)>0){
-        newPrice2.textContent="$"+(Math.round(price))
+        newPrice2.textContent="$"+price
     }
 })
 
@@ -49,7 +51,7 @@ subItem1.addEventListener('click',()=>{
     }
     else if(!(itemsNum1.textContent=="0")){
         itemsNum1.textContent=(Number(itemsNum1.textContent)-1).toString()  
-        newPrice1.textContent="$"+(Math.round(price))
+        newPrice1.textContent="$"+price
     }
 })
 
@@ -66,7 +68,7 @@ subItem2.addEventListener('click',()=>{
     }
     else if(!(itemsNum2.textContent=="0")){
         itemsNum2.textContent=(Number(itemsNum2.textContent)-1).toString()  
-        newPrice2.textContent="$"+(Math.round(price))
+        newPrice2.textContent="$"+price
     }
 })
 
@@ -79,7 +81,11 @@ signs.forEach(sign=>{
         else{
             shipping.textContent="$19"
         }
+        let totalPriiiice="$"+(Number((newPrice1.textContent).slice(1))+ Number((newPrice2.textContent).slice(1))+Number((shipping.textContent).slice(1))).toString()
+        console.log(totalPriiiice)
+        totalPrice.textContent=totalPriiiice
     })
+
 })
 
 //form validation
@@ -98,5 +104,8 @@ form.addEventListener('submit',(event)=>{
         alert("Fill up all fileds and try again please!")
     }
 })
+
+//total functionality
+
 
 // alert when user selects 0 quantity
